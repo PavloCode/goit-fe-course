@@ -1,0 +1,47 @@
+.menu {
+    text-align: center;
+    margin-top: 72px;
+}
+.menu-item {
+    display: inline-block;
+}
+.menu-link {
+    text-decoration: none;
+    color: #626262;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+.menu-link:hover {
+    color: #03a9f4;
+    transition: color 0.4s;
+}
+.card {
+    width: 420px;
+    display: inline-block;
+   margin: 0 30px 0 30px;
+}
+.secondary-title {
+    color: #626262;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 31px;
+}
+.main-title {
+    color: #626262;
+    text-align: left;
+    margin-top: 32px;
+}
+.text {
+    text-align: justify;
+    margin-top: 36px;
+    color: #626262;
+}
+.main-card {
+    text-align: center;
+    margin-top: 82px;
+}
+.button-load {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    text-align: center;
+}
