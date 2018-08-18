@@ -1,3 +1,10 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+* {
+    outline: 1px solid red;
+} */
 .menu {
     text-align: center;
     margin: 72px 0;
@@ -11,37 +18,38 @@
     text-decoration: none;
     color: #626262;
     text-transform: uppercase;
+    font-size: 14px;
 }
 .menu-link:hover {
     color: #03a9f4;
     transition: color 0.4s;
 }
 .card {
-    width: 420px;
+    width: 440px;
     display: inline-block;
     margin: 0 30px;
 }
 .secondary-title {
     color: #b4ad9e;
     text-transform: uppercase;
-    text-align: left;
     margin-top: 31px;
-    font-family: 'Playfair Display', serif;
+    font-size: 14px;
 }
-.main-title {
+.card-title {
     color: #626262;
-    text-align: left;
     margin-top: 32px;
-    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    vertical-align: top;
+    box-sizing: border-box;
 }
 .text {
     text-align: justify;
     margin-top: 36px;
     color: #626262;
-    font-family: 'Playfair Display', serif;
+    font-size: 14px;
 }
 .main {
-    width: 80%;
+    width: 1004px;
     margin: 0 auto;
 }
 .image {
@@ -50,6 +58,7 @@
 .button {
     width: 200px;
     margin: 0 auto;
+    text-align: center;
 }
 .button-load {
     background-color: #FFFFFF;
@@ -59,6 +68,8 @@
     display: inline-block;
     font-size: 16px;
     border: 1px solid #626262;
-    font-family: 'Playfair Display', serif;
     margin: 56px 0;
+}
+body {
+    font-family: 'Playfair Display', serif;
 }
