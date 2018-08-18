@@ -1,8 +1,8 @@
-/* * {
+ * {
     margin: 0;
     padding: 0;
 }
-* {
+/** {
     outline: 1px solid red;
 } */
 .menu {
@@ -37,7 +37,7 @@
     margin-top: 31px;
     font-size: 14px;
     line-height: auto;
-    font-family: "Ubuntu";
+    font-family: 'Ubuntu', sans-serif;
 }
 .card-title {
     color: #626262;
