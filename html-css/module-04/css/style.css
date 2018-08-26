@@ -16,7 +16,7 @@
 .first-letter {
     color: rgb(26, 188, 156);
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .logo {
@@ -84,28 +84,34 @@
     margin: 0 auto;
     display: block;
     margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 .main {
     /* margin: 0 auto; */
-    margin-top: 90px;
+    /* margin-top: 90px; */
 }
 
-.catalog-item {
+.product {
     width: 255px;
     float: left;
     margin-right: 30px;
     margin-bottom: 30px;
+    background-color: #323232;
 }
 
-.catalog-item2 {
+.product.add {
     width: 255px;
     float: left;
-    background-color: #e9f0fd;
-    margin-bottom: 30px;
+    margin-right: 0;
 }
 
-.link-container:hover {}
+
+/*product hover */
+
+.product:hover {
+    background: rgb(26, 188, 156);
+}
 
 .image {
     width: 100%;
@@ -118,7 +124,7 @@
 
 .text {
     float: left;
-    background-color: #323232;
+    /* background-color: #323232; */
     color: rgb(255, 255, 255);
     /* width: 180px; */
     /* padding: 10px; */
@@ -133,7 +139,8 @@
 
 .prise {
     float: left;
-    background-color: #8c8c8c;
+    /* background-color: #8c8c8c; */
+    background-color: rgba(255, 255, 255, 0.5);
     color: rgb(255, 255, 255);
     /* width: 35px; */
     /* padding: 10px; */
@@ -148,20 +155,21 @@
 
 .info {
     box-sizing: border-box;
+    /* background-color: #323232; */
+    /* color: white; */
 }
 
 
 /* ------------------- */
 
-.catalog-item3 {
+.news-container {
     width: 355px;
     float: left;
     margin-right: 22px;
 }
 
-.catalog-item4 {
-    width: 355px;
-    float: left;
+.news-container.addition {
+    margin-right: 0px;
 }
 
 .image2 {
@@ -209,7 +217,7 @@
     border-radius: 3px;
 }
 
-.article {
+.aside {
     margin: 0 auto;
     margin-top: 90px;
 }
