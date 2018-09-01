@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1110px;
+    margin: auto;
+}
+.first-letter {
+    color: rgb(26, 188, 156);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.logo {
+    float: left;
+    margin-top: 35px;
+    width: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(85, 82, 82);
+    font-size: 30px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.menu {
+    float: right;
+    margin-top: 40px;
+}
+.menu li {
+    float: left;
+    list-style-type: none;
+    padding-left: 30px;
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(15, 1, 1);
+    font-size: 14px;
+    line-height: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.menu-link:hover {
+    color: rgb(26, 188, 156);
+}
+/* ------------------------------ */
+.paris-tours {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 20px;
+}
+.img-background {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.cover {
+    background-color: rgba(0, 0, 0, 0.562);
+    /* background-color: #6f737a;
+    opacity: 0.549; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    z-index: 0;
+}
+/* ------------------- */
+.container-menu {
+    width: 1110px;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 85px;
+    z-index: 1;
+}
+.button-left {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(78, 198, 172, 0.712);
+    /* opacity: 0.651; */
+    top: 45%;
+    transform: translateY(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
+    left: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.row {
+    padding-top: 30px;
+}
+.button-right {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(78, 198, 171);
+    /* opacity: 0.651; */
+    top: 45%;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+}
+.paris-box {
+    display: inline-block;
+    position: absolute;
+    left: 170px;
+    top: 200px;
+}
+.paris-title {
+    font-size: 60px;
+    text-align: 82px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    /* color: rgb(255, 114, 0); */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.paris-text {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: 54px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+/* ----------------- */
+.dress-shop {
+    height: 670px;
+    width: 100%;
+    background-color: rgb(233, 240, 253);
+}
+.catalog-title {
+    text-transform: uppercase;
+    color: rgb(81, 81, 81);
+    font-size: 48px;
+    line-height: 32px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 100px;
+    font-weight: bold;
+}
+.catalog-title::after {
+    content: '';
+    width: 160px;
+    height: 7px;
+    background: rgb(26, 188, 156);
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+/* ----------------------- */
+.card-item {
+    width: 255px;
+    height: 322px;
+    background-color: beige;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+}
+.card-item.add {
+    margin-right: 0;
+}
+.img-clothes {
+    width: 100%;
+    display: block;
+}
+.panel-product {
+    /* background-color: black; */
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    top: 88%;
+    width: 100%;
+}
+.name-title {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 32px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+.prise {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 11px;
+    font-size: 18px;
+    font-weight: 32px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+/* --------------------- */
+.cover-clothes {
+    width: 245px;
+    height: 275px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.card-item:hover .cover-clothes {
+    display: block;
+}
+.card-item:hover .panel-product {
+    background-color: rgb(78, 198, 171);
+}
+.cover-clothes-panel {
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90px;
+    text-align: center;
+}
+.button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid white;
+    position: relative;
+    margin: 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(78, 198, 171);
+}
+.heart {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+.two-rows {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+.clock {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.busket {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.button-buy {
+    width: 170px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 2px;
+    cursor: pointer;
+}
+.button-buy:hover {
+    background-color: rgb(50, 50, 50);
+}
+.add-to-cart {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ----------------- */
+.footer {
+    background-color: rgb(50, 50, 50);
+}
+.contact {
+    width: 400px;
+    margin: 0 auto;
+}
+.footer-menu {
+    text-align: center;
+}
+.footer-item {
+    display: inline-block;
+    margin: 40px 0;
+}
+.contact-link {
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    font-size: 16px;
+    font-weight: 28px;
+    font-family: "OpenSans";
+    font-weight: lighter;
+}
+.nick {
+    font-family: "OpenSans";
+    color: rgb(78, 198, 171);
+    font-size: 16px;
+    font-weight: 28px;
+    font-weight: lighter;
+}
