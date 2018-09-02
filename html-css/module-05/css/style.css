@@ -217,7 +217,7 @@
 
 .name-title {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
