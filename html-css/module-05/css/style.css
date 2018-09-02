@@ -108,7 +108,9 @@
 } */
 
 .container-menu {
-    width: 1110px;
+    /* width: 1110px; */
+    width: 100%;
+    max-width: 1110px;
     height: 100%;
     position: absolute;
     /* outline: 1px solid red; */
