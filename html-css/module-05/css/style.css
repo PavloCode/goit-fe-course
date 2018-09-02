@@ -73,10 +73,10 @@
     display: block;
 }
 
-.cover {
-    background-color: rgba(0, 0, 0, 0.562);
-    /* background-color: #6f737a;
-    opacity: 0.549; */
+.overlay {
+    /* background-color: rgba(0, 0, 0, 0.562); */
+    background-color: rgb(0, 0, 2);
+    opacity: 0.522;
     position: absolute;
     top: 0;
     left: 0;
@@ -233,7 +233,7 @@
     margin-right: 0;
 }
 
-.img-clothes {
+.img-product {
     width: 100%;
     display: block;
 }
@@ -241,7 +241,7 @@
 .panel-product {
     background-color: rgb(50, 50, 50);
     position: absolute;
-    top: 88%;
+    bottom: 0;
     width: 100%;
 }
 
@@ -272,19 +272,28 @@
 
 /* --------------------- */
 
-.cover-clothes {
-    width: 245px;
-    height: 275px;
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.562);
+.overlay-product {
+    /* width: 245px;
+    height: 274px; */
+    /* margin: 5px; */
+    /* background-color: rgba(0, 0, 0, 0.562); */
+    background-color: rgb(0, 0, 0);
+    opacity: 0.549;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 10;
+    /* z-index: 10; */
     display: none;
+    border: 8px solid rgb(255, 255, 255);
+    width: 94%;
+    height: 82.3%;
 }
 
-.product:hover .cover-clothes {
+.product:hover .overlay-product {
+    display: block;
+}
+
+.product:hover .overlay-product-panel {
     display: block;
 }
 
@@ -292,13 +301,14 @@
     background-color: rgb(78, 198, 171);
 }
 
-.cover-clothes-panel {
+.overlay-product-panel {
     position: absolute;
     width: 180px;
     left: 50%;
     transform: translateX(-50%);
     top: 90px;
     text-align: center;
+    display: none;
 }
 
 .button {
