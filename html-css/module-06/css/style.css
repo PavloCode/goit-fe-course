@@ -54,9 +54,7 @@
     color: rgb(149, 225, 211);
     font-weight: bold;
 }
-
 /* end-header */
-
 /* titles */
 .wrapper-titles {
     margin-bottom: 100px;
@@ -174,9 +172,6 @@
 .team-sub-text-second {
     text-align: center;
 }
-/* .adds {
-    padding-bottom: 45px;
-} */
 /* team-section */
 .team {
     margin-bottom: 80px;
