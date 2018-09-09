@@ -103,6 +103,10 @@
     margin-bottom: 0;
 }
 /* titles-start */
+.features-title {
+    margin-bottom: 80px;
+    position: relative;
+}
 .features-list-title,
 .features-list-text {
     padding-left: 100px;
