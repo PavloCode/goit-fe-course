@@ -198,33 +198,40 @@
     height: 35px;
     top: 15px;
     left: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     background-position: center;
+    background: url(../img/sprites.png) no-repeat;
 }
 
 .icon-clock::before {
-    background-image: url(../img/ALARM.png);
+    /* background-image: url(../img/ALARM.png); */
+    background-position: -209px -10px;
 }
 
 .icon-chart::before {
-    background-image: url(../img/LINEGRAPH.png);
+    /* background-image: url(../img/LINEGRAPH.png); */
+    background-position: -108px -10px;
 }
 
 .icon-computer::before {
-    background-image: url(../img/COMPUTEROK.png);
+    /* background-image: url(../img/COMPUTEROK.png); */
+    background-position: -258px -12px;
 }
 
 .icon-book::before {
-    background-image: url(../img/BOOK2.png);
+    /* background-image: url(../img/BOOK2.png); */
+    background-position: -157px -10px;
 }
 
 .icon-house::before {
-    background-image: url(../img/HOME.png);
+    /* background-image: url(../img/HOME.png); */
+    background-position: -9px -9px;
 }
 
 .icon-squre::before {
-    background-image: url(../img/IMAGE.png);
+    /* background-image: url(../img/IMAGE.png); */
+    background-position: -57px -10px;
 }
 
 
