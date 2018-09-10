@@ -89,8 +89,11 @@
     margin-bottom: 100px;
 }
 
-.wrapper-titles-team {
-    margin-bottom: 80px;
+.wrapper-titles-team,
+wrapper-titles {
+    margin: 0 auto 80px;
+    width: 100%;
+    max-width: 950px;
 }
 
 .sub-features-title,
@@ -101,20 +104,7 @@
     font-weight: 300;
     padding-bottom: 10px;
     text-transform: none;
-    /* display: flex;
-    justify-content: center; */
 }
-
-
-/* .main-features-title,
-.main-team-title {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-} */
 
 
 /* feauteres-section */
@@ -198,39 +188,31 @@
     height: 35px;
     top: 15px;
     left: 30px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
     background-position: center;
     background: url(../img/sprites.png) no-repeat;
 }
 
 .icon-clock::before {
-    /* background-image: url(../img/ALARM.png); */
     background-position: -209px -10px;
 }
 
 .icon-chart::before {
-    /* background-image: url(../img/LINEGRAPH.png); */
     background-position: -108px -10px;
 }
 
 .icon-computer::before {
-    /* background-image: url(../img/COMPUTEROK.png); */
     background-position: -258px -12px;
 }
 
 .icon-book::before {
-    /* background-image: url(../img/BOOK2.png); */
     background-position: -157px -10px;
 }
 
 .icon-house::before {
-    /* background-image: url(../img/HOME.png); */
     background-position: -9px -9px;
 }
 
 .icon-squre::before {
-    /* background-image: url(../img/IMAGE.png); */
     background-position: -57px -10px;
 }
 
@@ -278,15 +260,12 @@
 
 .team-list {
     display: flex;
-    /* justify-content: space-around; */
     justify-content: space-between;
     margin-top: 95px;
 }
 
 .team-list-item {
-    /* width: 33.3333%; */
     width: 380px;
-    /* margin-right: 40px; */
     position: relative;
 }
 
@@ -345,11 +324,6 @@
 .wrapper-for-background-shadow {
     position: relative;
 }
-
-
-/* .add {
-    margin-right: 0;
-} */
 
 .team-item-date {
     text-align: center;
