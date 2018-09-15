@@ -1,0 +1,338 @@
+/* header-start */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid gainsboro; */
+}
+
+.page-header {
+    padding-bottom: 75px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-navigation {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    padding-left: 40px;
+}
+
+.menu-link,
+.link-logo {
+    text-decoration: none;
+}
+
+.menu-link {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 41px;
+    color: rgb(34, 43, 43);
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    color: rgb(255, 209, 54);
+}
+
+.logo {
+    font-family: 'Wisdom';
+    font-size: 26px;
+    line-height: 41px;
+    color: rgb(255, 209, 54);
+    font-weight: lighter;
+}
+
+
+/* header-end */
+
+
+/* title-start */
+
+.wrapper-title {
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.services-tite,
+.footer-tite {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: 75px;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.services-sub-title,
+.footer-sub-title {
+    font-size: 16px;
+    font-family: 'DroidSerif';
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.services-list {
+    display: flex;
+    padding-bottom: 105px;
+}
+
+.services-item {
+    width: 33.333%;
+    padding: 0 10px;
+}
+
+.services-item-title,
+.footer-tite {
+    text-align: center;
+}
+
+.services-item-title {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.services-item-text {
+    font-size: 14px;
+    font-family: 'RobotoSlab';
+    color: rgb(119, 119, 119);
+}
+
+.services-item-text,
+.footer-sub-title {
+    text-indent: 15px;
+}
+
+.footer-tite {
+    color: rgb(255, 255, 255);
+}
+
+
+/* title-end */
+
+
+/* icon */
+
+.services-item {
+    position: relative;
+}
+
+.services-item::before {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    background-position: center;
+    background: url(../img/sprites.png) no-repeat;
+    top: -45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon-basket::before {
+    background-position: -5px -5px;
+}
+
+.icon-laptop::before {
+    background-position: -89px -5px;
+}
+
+.icon-locked::before {
+    background-position: -5px -88px;
+}
+
+
+/* icon-end */
+
+
+/* footer */
+
+.wrapper-title-add {
+    padding-top: 85px;
+    padding-bottom: 80px;
+}
+
+.page-footer {
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+/* form */
+
+.input-wrapped {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text {
+    width: 455px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-indent: 6px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: rgb(187, 187, 187);
+    text-transform: uppercase;
+}
+
+.form-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-area-wrapped {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textarea-fild {
+    height: 210px;
+    width: 455px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    text-indent: 6px;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+
+.wrapper-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit {
+    width: 240px;
+    height: 65px;
+    border: none;
+    background-color: rgb(245, 192, 19);
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-registration {
+    padding-bottom: 115px;
+}
+
+.form-page input[type='email']:valid {
+    /* outline: 2px solid green; */
+    box-shadow: 0 0 10px rgb(0, 255, 106);
+}
+
+.form-page input[type='email']:invalid {
+    /* outline: 2px solid rgb(128, 0, 0); */
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.form-page input[type='text']:valid {
+    /* outline: 2px solid green; */
+    box-shadow: 0 0 10px rgb(0, 255, 106);
+}
+
+.form-page input[type='text']:invalid {
+    /* outline: 2px solid rgb(128, 0, 0); */
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.form-page textarea:valid {
+    /* outline: 2px solid green; */
+    box-shadow: 0 0 10px rgb(0, 255, 106);
+}
+
+.form-page textarea:invalid {
+    /* outline: 2px solid rgb(128, 0, 0); */
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.form-page input:focus {
+    outline: none;
+}
+
+.form-page textarea:focus {
+    outline: none;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-500.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-700.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wisdom';
+    src: url('../fonts/wisdom/Wisdom Script AJ.otf') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: url('../fonts/droidserif/3951.ttf') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../fonts/roboto-slab-v7-latin/roboto-slab-v7-latin-regular.woff');
+    font-style: normal;
+    font-weight: 400;
+}
