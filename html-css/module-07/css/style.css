@@ -63,7 +63,7 @@
 
 /* title-start */
 
-.wrapper-title-main {
+.wrapper-title {
     text-align: center;
     /* padding-bottom: 140px; */
     padding-bottom: 80px;
@@ -99,7 +99,7 @@
 }
 
 .footer-discriprion {
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 .services-discriprion {
