@@ -77,7 +77,6 @@
     text-transform: uppercase;
     font-weight: 700;
     font-style: normal;
-    /* letter-spacing: -1.8px; */
 }
 
 .footer-tite {
@@ -89,10 +88,8 @@
     font-size: 16px;
     font-family: 'DroidSerif';
     color: rgb(119, 119, 119);
-    /* font-style: italic; */
     font-weight: 400;
     text-transform: none;
-    /* letter-spacing: -0.3px; */
 }
 
 .services-list {
@@ -210,30 +207,15 @@
     font-weight: bold;
 }
 
-
-/* .input-text[placeholder] {
-    color: rgb(95, 95, 95);
-    text-transform: uppercase;
-
-} */
-
 input::-webkit-input-placeholder {
     text-transform: uppercase;
     color: rgb(187, 187, 187);
-    /* font-weight: bold; */
 }
 
 textarea::-webkit-input-placeholder {
     text-transform: uppercase;
     color: rgb(187, 187, 187);
-    /* font-weight: bold; */
 }
-
-
-/* .textarea-fild[placeholder] {
-    color: rgb(95, 95, 95);
-    text-transform: uppercase;
-} */
 
 .form-page {
     display: flex;
@@ -288,34 +270,24 @@ textarea::-webkit-input-placeholder {
     padding-bottom: 115px;
 }
 
-.form-page input[type='email']:valid {
-    /* outline: 2px solid green; */
-    box-shadow: 0 0 10px rgb(0, 255, 106);
-}
-
-.form-page input[type='email']:invalid {
-    /* outline: 2px solid rgb(128, 0, 0); */
+input:required:focus:invalid {
     box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
-.form-page input[type='text']:valid {
-    /* outline: 2px solid green; */
+input:required:focus:valid {
     box-shadow: 0 0 10px rgb(0, 255, 106);
 }
 
-.form-page input[type='text']:invalid {
-    /* outline: 2px solid rgb(128, 0, 0); */
+textarea:required:focus:invalid {
     box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
-.form-page textarea:valid {
-    /* outline: 2px solid green; */
+textarea:required:focus:valid {
     box-shadow: 0 0 10px rgb(0, 255, 106);
 }
 
-.form-page textarea:invalid {
-    /* outline: 2px solid rgb(128, 0, 0); */
-    box-shadow: 0 0 10px rgb(255, 0, 0);
+input:focus {
+    box-shadow: 0 0 10px rgb(0, 255, 106);
 }
 
 .form-page input:focus {
@@ -363,14 +335,6 @@ textarea::-webkit-input-placeholder {
     font-style: normal;
     font-weight: 400;
 }
-
-
-/* @font-face {
-    font-family: 'DroidSerif';
-    src: url('../fonts/droid-serif/DroidSerif-Regular.ttf') format('woff');
-    font-style: normal;
-    font-weight: 400;
-} */
 
 @font-face {
     font-family: 'DroidSerif';
