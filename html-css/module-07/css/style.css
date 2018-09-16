@@ -65,7 +65,7 @@
 
 .wrapper-title {
     text-align: center;
-    padding-bottom: 140px;
+    /* padding-bottom: 140px; */
 }
 
 .services-tite,
@@ -90,6 +90,14 @@
     color: rgb(119, 119, 119);
     font-weight: 400;
     text-transform: none;
+}
+
+.footer-discriprion {
+    padding-bottom: 80px;
+}
+
+.services-discriprion {
+    padding-bottom: 140px;
 }
 
 .services-list {
@@ -171,10 +179,11 @@
 
 /* footer */
 
-.wrapper-title-add {
+
+/* .wrapper-title-add {
     padding-top: 85px;
     padding-bottom: 80px;
-}
+} */
 
 .page-footer {
     background: url('../img/map.png');
@@ -183,21 +192,21 @@
     background-repeat: no-repeat;
     width: 100%;
     background-color: rgb(34, 34, 34);
+    padding-top: 85px;
 }
 
 
 /* form */
 
 .input-wrapped {
-    display: flex;
-    flex-direction: column;
+    width: 470px;
+    text-align: end;
 }
 
 .input-text {
-    width: 455px;
-    height: 50px;
+    /* width: 455px; */
+    width: 100%;
     border-radius: 5px;
-    text-indent: 6px;
     margin-bottom: 30px;
     border: none;
     box-sizing: border-box;
@@ -207,6 +216,7 @@
     line-height: 30px;
     color: rgb(95, 95, 95);
     font-weight: bold;
+    padding: 10px 10px;
 }
 
 input::-webkit-input-placeholder {
@@ -225,11 +235,12 @@ textarea::-webkit-input-placeholder {
     justify-content: space-between;
 }
 
-.text-area-wrapped {
+
+/* .text-area-wrapped {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 .textarea-fild {
     height: 210px;
@@ -237,7 +248,6 @@ textarea::-webkit-input-placeholder {
     border: none;
     border-radius: 5px;
     resize: none;
-    text-indent: 6px;
     box-sizing: border-box;
     padding: 8px 10px;
     line-height: 30px;
