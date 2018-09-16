@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid gainsboro; */
+    outline: 1px solid gainsboro;
 }
 
 .page-header {
@@ -199,8 +199,13 @@
 /* form */
 
 .input-wrapped {
-    width: 470px;
+    /* width: 470px; */
+    width: 460px;
     text-align: end;
+}
+
+.add {
+    width: 480px;
 }
 
 .input-text {
