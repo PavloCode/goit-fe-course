@@ -94,12 +94,13 @@
 
 .services-list {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 105px;
 }
 
 .services-item {
-    width: 33.333%;
-    padding: 0 10px;
+    width: 300px;
+    text-align: center;
 }
 
 .services-item-title,
@@ -176,11 +177,12 @@
 }
 
 .page-footer {
-    background: url(../img/background.jpg);
+    background: url('../img/map.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background-color: rgb(34, 34, 34);
 }
 
 
@@ -306,28 +308,28 @@ input:focus {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-500.woff');
+    src: url('../fonts/montserrat-v12-latin_cyrillic-2/montserrat-v12-latin_cyrillic-500.woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-600.woff');
+    src: url('../fonts/montserrat-v12-latin_cyrillic-2/montserrat-v12-latin_cyrillic-600.woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-700.woff');
+    src: url('../fonts/montserrat-v12-latin_cyrillic-2/montserrat-v12-latin_cyrillic-700.woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-800.woff');
+    src: url('../fonts/montserrat-v12-latin_cyrillic-2/montserrat-v12-latin_cyrillic-800.woff');
     font-weight: 800;
     font-style: normal;
 }
