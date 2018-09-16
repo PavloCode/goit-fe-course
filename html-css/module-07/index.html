@@ -12,72 +12,79 @@
 
 <body>
     <header class="page-header">
-        <nav class="page-nav container">
-            <a class="link-logo" href="#">
-                <h1 class="logo">Golden</h1>
-            </a>
-            <ul class="menu-navigation">
-                <li class="menu-item">
-                    <a class="menu-link" href="#">home</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#">services</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#">portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#">about</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#">contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="wpapper-header">
+                <a class="link-logo" href="#">
+                    <h1 class="logo">Golden</h1>
+                </a>
+                <nav class="page-nav">
+                    <ul class="menu-navigation">
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">services</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">portfolio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">about</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main class="page-main container">
-        <section class="services">
-            <div class="wrapper-title">
-                <h2 class="services-sub-title"><span class="services-tite">services</span>
-                    <br>Proin iaculis purus consequat sem cure.</h2>
-            </div>
-        </section>
-        <div class="services-list">
-            <div class="services-item icon-basket">
-                <h3 class="services-item-title">E-Commerce</h3>
-                <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
-            <div class="services-item icon-laptop">
-                <h3 class="services-item-title">Responsive Web</h3>
-                <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
-            <div class="services-item icon-locked">
-                <h3 class="services-item-title">Web Security</h3>
-                <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </div>
+    <main class="page-main">
+        <div class="container">
+            <section class="services">
+                <div class="wrapper-title">
+                    <h2 class="services-tite">services</h2>
+                    <p class="services-discriprion">Proin iaculis purus consequat sem cure.</p>
+                </div>
+                <div class="services-list">
+                    <div class="services-item icon-basket">
+                        <h3 class="services-item-title">E-Commerce</h3>
+                        <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="services-item icon-laptop">
+                        <h3 class="services-item-title">Responsive Web</h3>
+                        <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="services-item icon-locked">
+                        <h3 class="services-item-title">Web Security</h3>
+                        <p class="services-item-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="page-footer">
-        <section class="contact-registration container">
-            <div class="wrapper-title wrapper-title-add">
-                <h2 class="footer-sub-title"><span class="footer-tite">Contact us</span>
-                    <br>Proin iaculis purus consequat sem cure.</h2>
-            </div>
-            <form class="form-page" action="">
-                <section class="input-wrapped">
-                    <input class="input-text" type="text" name="name" required placeholder="YOUR NAME *">
-                    <input class="input-text" type="email" name="email" required placeholder="YOUR E-MAIL *">
-                    <input class="input-text" type="text" name="subject" placeholder="SUBJECT">
-                </section>
-                <section class="text-area-wrapped">
-                    <textarea class="textarea-fild" name="body" rows="5" cols="45" required placeholder="YOUR MESSAGE *"></textarea>
-                </section>
-                <section class="wrapper-submit">
-                    <!-- <input class="button-submit" type="submit" value="send message" id="send_mail"> -->
-                    <button class="button-submit">send message</button>
-                </section>
-            </form>
-        </section>
+        <div class="container">
+            <section class="contact-registration">
+                <div class="wrapper-title wrapper-title-add">
+                    <h2 class="footer-tite">Contact us</h2>
+                    <p class="footer-discriprion">Proin iaculis purus consequat sem cure</p>
+                </div>
+                <form class="form-page" action="">
+                    <section class="input-wrapped">
+                        <input class="input-text" type="text" name="name" required placeholder="YOUR NAME *">
+                        <input class="input-text" type="email" name="email" required placeholder="YOUR E-MAIL *">
+                        <input class="input-text" type="text" name="subject" placeholder="SUBJECT">
+                    </section>
+                    <section class="text-area-wrapped">
+                        <textarea class="textarea-fild" name="body" rows="5" cols="45" required placeholder="YOUR MESSAGE *"></textarea>
+                    </section>
+                    <section class="wrapper-submit">
+                        <button class="button-submit" type="submit">send message</button>
+                    </section>
+                </form>
+            </section>
+        </div>
     </footer>
 
 </body>

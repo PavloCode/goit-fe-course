@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-.page-nav {
+.wpapper-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +78,12 @@
     font-style: normal;
 }
 
-.services-sub-title,
-.footer-sub-title {
+.footer-tite {
+    line-height: auto;
+}
+
+.services-discriprion,
+.footer-discriprion {
     font-size: 16px;
     font-family: 'DroidSerif';
     color: rgb(119, 119, 119);
@@ -105,10 +109,10 @@
 
 .services-item-title {
     font-size: 18px;
+    line-height: 75px;
     font-family: 'Montserrat';
     color: rgb(34, 34, 34);
     font-weight: 700;
-    line-height: 75px;
 }
 
 .services-item-text {
@@ -198,7 +202,8 @@
     font-size: 14px;
     font-family: 'Montserrat';
     color: rgb(187, 187, 187);
-    text-transform: uppercase;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 
 .form-page {
@@ -224,9 +229,8 @@
     font-size: 14px;
     font-family: 'Montserrat';
     color: rgb(187, 187, 187);
-    text-transform: uppercase;
     box-sizing: border-box;
-    padding: 8px 0;
+    padding: 8px 10px;
 }
 
 .wrapper-submit {
