@@ -65,11 +65,10 @@
 
 .wrapper-title {
     text-align: center;
-    /* padding-bottom: 140px; */
     padding-bottom: 80px;
 }
 
-.services-tite,
+.section-title,
 .footer-tite {
     font-family: 'Montserrat';
     font-size: 40px;
@@ -84,23 +83,13 @@
     line-height: auto;
 }
 
-.services-discriprion,
-.footer-discriprion {
+.section-discription {
     font-size: 16px;
     font-family: 'DroidSerif';
     color: rgb(119, 119, 119);
     font-weight: 400;
     text-transform: none;
 }
-
-
-/* .footer-discriprion {
-    padding-bottom: 80px;
-}
-
-.services-discriprion {
-    padding-bottom: 140px;
-} */
 
 .services-list {
     display: flex;
@@ -134,10 +123,11 @@
 
 .services-item-text,
 .footer-sub-title {
-    text-indent: 15px;
+    /* text-indent: 15px; */
+    line-height: 24px;
 }
 
-.footer-tite {
+.white {
     color: rgb(255, 255, 255);
 }
 
@@ -191,11 +181,10 @@
 
 .input-wrapped {
     width: 460px;
-    text-align: end;
 }
 
 .add {
-    width: 480px;
+    width: 440px;
 }
 
 .input-text {
@@ -231,7 +220,7 @@ textarea::-webkit-input-placeholder {
 
 .textarea-fild {
     height: 210px;
-    width: 455px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     resize: none;
