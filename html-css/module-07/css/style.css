@@ -364,7 +364,7 @@ textarea::-webkit-input-placeholder {
 
 @font-face {
     font-family: 'DroidSerif';
-    src: url('../fonts/droidserif/3951.ttf') format('woff');
+    src: url('../fonts/droid-serif/DroidSerif-Regular.ttf') format('woff');
     font-style: normal;
     font-weight: 400;
 }
