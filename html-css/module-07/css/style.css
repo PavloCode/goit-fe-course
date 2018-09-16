@@ -204,18 +204,34 @@
     font-size: 14px;
     font-family: 'Montserrat';
     line-height: 30px;
+    color: rgb(95, 95, 95);
+    font-weight: bold;
+}
+
+
+/* .input-text[placeholder] {
+    color: rgb(95, 95, 95);
+    text-transform: uppercase;
+
+} */
+
+input::-webkit-input-placeholder {
+    text-transform: uppercase;
     color: rgb(187, 187, 187);
+    /* font-weight: bold; */
 }
 
-.input-text[placeholder] {
-    color: rgb(95, 95, 95);
+textarea::-webkit-input-placeholder {
     text-transform: uppercase;
+    color: rgb(187, 187, 187);
+    /* font-weight: bold; */
 }
 
-.textarea-fild[placeholder] {
+
+/* .textarea-fild[placeholder] {
     color: rgb(95, 95, 95);
     text-transform: uppercase;
-}
+} */
 
 .form-page {
     display: flex;
@@ -241,7 +257,8 @@
     line-height: 30px;
     font-size: 14px;
     font-family: 'Montserrat';
-    color: rgb(187, 187, 187);
+    color: rgb(95, 95, 95);
+    font-weight: bold;
 }
 
 .wrapper-submit {
