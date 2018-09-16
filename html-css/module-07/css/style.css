@@ -69,11 +69,6 @@
     padding-bottom: 80px;
 }
 
-.wrapper-title {
-    text-align: center;
-    /* padding-bottom: 140px; */
-}
-
 .services-tite,
 .footer-tite {
     font-family: 'Montserrat';
@@ -98,13 +93,14 @@
     text-transform: none;
 }
 
-.footer-discriprion {
-    /* padding-bottom: 80px; */
+
+/* .footer-discriprion {
+    padding-bottom: 80px;
 }
 
 .services-discriprion {
-    /* padding-bottom: 140px; */
-}
+    padding-bottom: 140px;
+} */
 
 .services-list {
     display: flex;
