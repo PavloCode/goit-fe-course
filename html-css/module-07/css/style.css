@@ -270,6 +270,9 @@ textarea::-webkit-input-placeholder {
     padding-bottom: 115px;
 }
 
+
+/* valid */
+
 input:required:focus:invalid {
     box-shadow: 0 0 10px rgb(255, 0, 0);
 }
