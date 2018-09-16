@@ -195,16 +195,26 @@
 .input-text {
     width: 455px;
     height: 50px;
-    line-height: 30px;
     border-radius: 5px;
     text-indent: 6px;
     margin-bottom: 30px;
     border: none;
-    font-size: 14px;
-    font-family: 'Montserrat';
-    color: rgb(187, 187, 187);
     box-sizing: border-box;
     padding-left: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    line-height: 30px;
+    color: rgb(187, 187, 187);
+}
+
+.input-text[placeholder] {
+    color: rgb(95, 95, 95);
+    text-transform: uppercase;
+}
+
+.textarea-fild[placeholder] {
+    color: rgb(95, 95, 95);
+    text-transform: uppercase;
 }
 
 .form-page {
@@ -226,12 +236,12 @@
     border-radius: 5px;
     resize: none;
     text-indent: 6px;
+    box-sizing: border-box;
+    padding: 8px 10px;
     line-height: 30px;
     font-size: 14px;
     font-family: 'Montserrat';
     color: rgb(187, 187, 187);
-    box-sizing: border-box;
-    padding: 8px 10px;
 }
 
 .wrapper-submit {
