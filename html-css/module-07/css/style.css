@@ -42,6 +42,7 @@
     line-height: 41px;
     color: rgb(34, 43, 43);
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .menu-link:hover {
@@ -303,6 +304,13 @@
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-500.woff');
     font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin/montserrat-v12-latin-600.woff');
+    font-weight: 600;
     font-style: normal;
 }
 
