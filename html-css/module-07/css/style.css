@@ -37,7 +37,7 @@
 }
 
 .menu-link {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 41px;
     color: rgb(34, 43, 43);
@@ -50,7 +50,7 @@
 }
 
 .logo {
-    font-family: 'Wisdom';
+    font-family: 'Wisdom', sans-serif;
     font-size: 26px;
     line-height: 41px;
     color: rgb(255, 209, 54);
@@ -70,7 +70,7 @@
 
 .section-title,
 .footer-tite {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     line-height: 75px;
     color: rgb(34, 34, 34);
@@ -85,7 +85,7 @@
 
 .section-discription {
     font-size: 16px;
-    font-family: 'DroidSerif';
+    font-family: 'DroidSerif', sans-serif;
     color: rgb(119, 119, 119);
     font-weight: 400;
     text-transform: none;
@@ -110,14 +110,14 @@
 .services-item-title {
     font-size: 18px;
     line-height: 75px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: rgb(34, 34, 34);
     font-weight: 700;
 }
 
 .services-item-text {
     font-size: 14px;
-    font-family: 'RobotoSlab';
+    font-family: 'RobotoSlab', sans-serif;
     color: rgb(119, 119, 119);
 }
 
@@ -190,7 +190,7 @@
     box-sizing: border-box;
     padding-left: 10px;
     font-size: 14px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     line-height: 30px;
     color: rgb(95, 95, 95);
     font-weight: bold;
@@ -223,7 +223,7 @@ textarea::-webkit-input-placeholder {
     padding: 8px 10px;
     line-height: 30px;
     font-size: 14px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: rgb(95, 95, 95);
     font-weight: bold;
 }
@@ -243,7 +243,7 @@ textarea::-webkit-input-placeholder {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
