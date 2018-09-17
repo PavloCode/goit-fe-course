@@ -235,8 +235,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .button-submit {
-    width: 240px;
-    height: 65px;
+    padding: 23px 45px;
     border: none;
     background-color: rgb(245, 192, 19);
     font-size: 30px;
