@@ -23,8 +23,7 @@ img {
 .container {
     margin: 0 auto;
     text-align: center;
-    min-width: 320px;
-    max-width: 1200px;
+    width: 320px;
 }
 
 .page-header {
