@@ -34,7 +34,7 @@ img {
     margin-bottom: 72px;
 }
 
-.navigation {
+.wrap-menu {
     padding: 30px 0 130px 0;
 }
 
@@ -71,6 +71,10 @@ img {
     padding-bottom: 35px;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
 .header-title {
     font-size: 30px;
     font-weight: bold;
@@ -104,6 +108,7 @@ img {
 }
 
 .header-button {
+    text-decoration: none;
     border: none;
     background-color: rgb(255, 78, 80);
     padding: 15px 65px;
@@ -178,6 +183,7 @@ img {
 }
 
 .main-button {
+    text-decoration: none;
     border: none;
     padding: 12px 85px;
     font-weight: bold;
@@ -206,8 +212,6 @@ img {
     background: url('../img/Sprites.png') no-repeat;
     content: "";
     position: absolute;
-    /* width: 17px;
-    height: 17px; */
     background-position: center;
     top: 50%;
     left: 50%;
@@ -276,7 +280,7 @@ img {
         justify-content: space-between;
     }
     .wrap-menu {
-        padding-top: 40px;
+        padding: 40px 21px 150px 0;
     }
     .card-list {
         justify-content: space-between;
@@ -294,9 +298,6 @@ img {
     .logo {
         padding-left: 36px;
         padding-top: 10px;
-    }
-    .navigation {
-        padding: 0px 36px 150px 0;
     }
     .header-title {
         padding-bottom: 38px;
