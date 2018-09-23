@@ -1,0 +1,336 @@
+* {
+    /* outline: 2px solid rgb(255, 0, 0); */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+.page-header {
+    background-image: url('../img/VectorSmartObject3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.navigation {
+    padding: 30px 0 130px 0;
+}
+
+.list-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.item-menu {
+    border: 2px solid transparent;
+    padding: 10px 15px;
+}
+
+.item-menu:hover {
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 35px;
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
+}
+
+.header-description {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.wrapper-header-title,
+.wrapper-header-description {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.wrapper-header-description {
+    width: 230px;
+    padding-bottom: 0;
+}
+
+.wrapper-title {
+    text-align: center;
+}
+
+.header-button {
+    border: none;
+    background-color: rgb(255, 78, 80);
+    padding: 15px 65px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.wrapper-button,
+.wrapper-button-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+.wrapper-button-footer {
+    padding-bottom: 58px;
+}
+
+
+/* main */
+
+.wrapper-main-title {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.main-title {
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-item {
+    width: 255px;
+    list-style: none;
+    padding-bottom: 27px;
+}
+
+.card-image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card-name {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.main-button {
+    border: none;
+    padding: 12px 85px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 20px;
+    color: rgb(255, 78, 80);
+    background-color: none;
+    border: 2px solid rgb(255, 78, 80);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    right: 65px;
+    top: 85px;
+}
+
+.icon::before {
+    background: url('../img/Sprites.png') no-repeat;
+    content: "";
+    position: absolute;
+    /* width: 17px;
+    height: 17px; */
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tv::before {
+    background-position: -5px -5px;
+    width: 17px;
+    height: 17px;
+}
+
+.flask::before {
+    background-position: -32px -5px;
+    width: 17px;
+    height: 17px;
+}
+
+.coffee::before {
+    background-position: -59px -5px;
+    width: 13px;
+    height: 16px;
+}
+
+.plane::before {
+    background-position: -5px -32px;
+    width: 17px;
+    height: 16px;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin_cyrillic-2/montserrat-v12-latin_cyrillic-700.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v18-cyrillic_latin');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v18-cyrillic_latin/roboto-v18-latin-100.woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+/* Media */
+
+@media (min-width:768px) {
+    .container {
+        width: 600px;
+    }
+    .page-header {}
+    .wrap-menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .wrap-menu {
+        padding-top: 40px;
+    }
+    .card-list {
+        justify-content: space-between;
+    }
+    .header-title {
+        font-size: 52px;
+    }
+    .wrapper-header-title {
+        width: 600px;
+        padding-bottom: 30px;
+    }
+    .wrapper-main-title {
+        width: 600px;
+    }
+    .logo {
+        padding-left: 36px;
+        padding-top: 10px;
+    }
+    .navigation {
+        padding: 0px 36px 150px 0;
+    }
+    .header-title {
+        padding-bottom: 38px;
+    }
+    .header-description {
+        font-size: 24px;
+    }
+    .wrapper-header-description {
+        width: 400px;
+    }
+    .header-button {
+        padding: 15px 30px;
+    }
+    .wrapper-button {
+        padding-bottom: 230px;
+    }
+    .wrapper-button-footer {
+        padding-bottom: 40px;
+    }
+    .chainge {
+        order: -1;
+    }
+    .main-button {
+        padding: 12px 40px;
+    }
+}
+
+@media (min-width:1200px) {
+    .wrap-menu {
+        display: flex;
+    }
+    .container {
+        width: 1200px;
+    }
+}
