@@ -51,7 +51,7 @@ img {
 
 /* header */
 
-.page-header {
+.wrap-header {
     background-image: url('../img/VectorSmartObject3.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -60,16 +60,18 @@ img {
     margin-bottom: 72px;
 }
 
-.authorization {
-    /* padding-bottom: 130px; */
+.page-header {
     padding-top: 30px;
+}
+
+.authorization {
+    padding-bottom: 130px;
 }
 
 .list-menu {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-bottom: 130px;
 }
 
 .item-menu {
@@ -108,7 +110,7 @@ img {
     font-family: 'Montserrat', sans-serif;
 }
 
-.header-title {
+.section-title {
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
@@ -117,21 +119,21 @@ img {
     padding-bottom: 15px;
 }
 
-.header-description {
+.section-description {
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
 
-.wrapper-header-title,
-.wrapper-header-description {
+.wrapper-section-title,
+.wrapper-section-description {
     width: 300px;
     margin: 0 auto;
     padding-bottom: 20px;
 }
 
-.wrapper-header-description {
+.wrapper-section-description {
     width: 230px;
     padding-bottom: 0;
 }
@@ -140,7 +142,7 @@ img {
     text-align: center;
 }
 
-.header-button {
+.section-button {
     text-decoration: none;
     border: none;
     background-color: rgb(255, 78, 80);
@@ -304,22 +306,26 @@ img {
         width: 600px;
         /* width: 750px; */
     }
-    .authorization {
+    .wrap-header {}
+    .page-header {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .authorization {
+    .page-header {
         padding: 40px 21px 130px 0;
+    }
+    .authorization {
+        padding-bottom: 0;
     }
     .card-list {
         /* justify-content: space-between; */
         justify-content: space-around;
     }
-    .header-title {
+    .section-title {
         font-size: 52px;
     }
-    .wrapper-header-title {
+    .wrapper-section-title {
         width: 600px;
         padding-bottom: 30px;
     }
@@ -333,13 +339,13 @@ img {
     .header-title {
         padding-bottom: 38px;
     }
-    .header-description {
+    .section-description {
         font-size: 24px;
     }
-    .wrapper-header-description {
+    .wrapper-section-description {
         width: 400px;
     }
-    .header-button {
+    .section-button {
         padding: 15px 30px;
     }
     .wrapper-button {
@@ -354,13 +360,10 @@ img {
     .main-button {
         padding: 12px 40px;
     }
-    .list-menu {
-        padding-bottom: 0;
-    }
 }
 
 @media (min-width:1200px) {
-    .wrap-menu {
+    .page-header {
         display: flex;
     }
     .container {
