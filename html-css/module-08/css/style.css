@@ -36,6 +36,10 @@ img {
 
 .wrap-menu {
     padding-top: 30px;
+    /* padding-bottom: 130px; */
+}
+
+.authorization {
     padding-bottom: 130px;
 }
 
@@ -288,6 +292,9 @@ img {
     }
     .wrap-menu {
         padding: 40px 21px 150px 0;
+    }
+    .authorization {
+        padding-bottom: 0;
     }
     .card-list {
         /* justify-content: space-between; */
