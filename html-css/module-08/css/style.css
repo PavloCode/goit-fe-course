@@ -36,6 +36,7 @@ img {
 
 .wrap-menu {
     padding-top: 30px;
+    padding-bottom: 130px;
 }
 
 .list-menu {
@@ -78,10 +79,6 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-}
-
-.authorization {
-    padding-bottom: 130px;
 }
 
 .header-title {
