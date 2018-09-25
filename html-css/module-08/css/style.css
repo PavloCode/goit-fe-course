@@ -63,12 +63,11 @@ img {
 }
 
 .page-header {
-    padding-top: 30px;
-}
-
-.page-header {
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    top: 30px;
 }
 
 .user-interact {
@@ -76,7 +75,6 @@ img {
 }
 
 .authorization {
-    /* padding-bottom: 130px; */
     padding-bottom: 120px;
 }
 
@@ -110,7 +108,6 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    /* padding-bottom: 35px; */
 }
 
 .logo-link {
@@ -325,8 +322,7 @@ img {
         justify-content: space-between;
     }
     .page-header {
-        /* padding: 40px 21px 130px 0; */
-        padding: 40px 21px 0 0;
+        padding-right: 21px;
     }
     .authorization {
         padding-bottom: 0;
