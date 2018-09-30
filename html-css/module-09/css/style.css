@@ -320,9 +320,6 @@
                 width: 600px;
                 padding-bottom: 30px;
             }
-            .wrapper-main-title {
-                width: 600px;
-            }
         }
         
         @media (min-width:1200px) {}
