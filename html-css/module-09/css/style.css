@@ -306,7 +306,6 @@
             width: 17px;
             height: 16px;
         }
-        /* Media */
         
         @media (min-width: 768px) {
             .logo {
