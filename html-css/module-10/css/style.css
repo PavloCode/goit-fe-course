@@ -91,6 +91,7 @@
     background-image: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: -o-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
+    height: 100vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -104,7 +105,7 @@
 }
 
 .mod {
-    padding-top: 160px;
+    padding-top: 130px;
 }
 
 .button--section {
@@ -119,9 +120,7 @@
     background-color: #ffffff2d;
 }
 
-.wrap-section-button {
-    padding-bottom: 250px;
-}
+.wrap-section-button {}
 
 .cart,
 .busket {
@@ -162,7 +161,7 @@
 }
 
 .section__title {
-    font-size: 150px;
+    font-size: 100px;
     color: #ffffff;
     line-height: 0.93;
     font-family: 'Montserrat', sans-serif;
@@ -172,10 +171,11 @@
 }
 
 .wrapper-titles {
-    margin: 0 auto 80px;
+    margin: 0 auto;
     width: 100%;
     max-width: 950px;
     position: relative;
+    padding-bottom: 80px;
 }
 
 .subtitle {
@@ -188,7 +188,7 @@
 }
 
 .section__subtitle {
-    font-size: 72px;
+    font-size: 45px;
     color: #ffffff;
     line-height: 2;
     font-family: 'Kaushan Script', cursive;
