@@ -107,8 +107,10 @@
     }
 }
 
-.mod {
-    padding-top: 130px;
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .button--section {
