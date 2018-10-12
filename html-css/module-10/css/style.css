@@ -94,7 +94,8 @@
     background-image: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: -o-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 650px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -189,6 +190,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .wrapper-banner {
@@ -196,7 +198,7 @@
     width: 100%;
     max-width: 950px;
     position: relative;
-    padding-bottom: 80px;
+    text-align: center;
 }
 
 .subtitle-universal {
