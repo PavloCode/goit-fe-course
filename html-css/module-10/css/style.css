@@ -144,8 +144,6 @@
     background-color: #ffffff2d;
 }
 
-.wrap-section-button {}
-
 .cart,
 .busket {
     display: block;
@@ -171,10 +169,6 @@
 
 
 /* titles */
-
-.main {
-    padding-top: 50px;
-}
 
 .title-universal {
     text-align: center;
@@ -225,6 +219,10 @@
 
 
 /* feauteres-section */
+
+.features {
+    padding-top: 50px;
+}
 
 .features__list {
     display: -webkit-box;
@@ -486,8 +484,6 @@
     fill: #ffffff;
     background-color: rgb(243, 129, 129);
 }
-
-.facebook::before {}
 
 
 /* footer */
