@@ -525,8 +525,7 @@
 }
 
 .button {
-    width: 150px;
-    height: 40px;
+    padding: 12px 25px;
     border: none;
     text-decoration: none;
     cursor: pointer;
@@ -546,14 +545,13 @@
 }
 
 .form__input {
-    width: 200px;
     line-height: 24px;
-    color: rgb(204, 204, 204);
+    color: rgb(94, 93, 93);
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     border: 1px solid rgb(204, 204, 204);
     border-right-color: rgb(149, 225, 211);
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 input::-webkit-input-placeholder {
