@@ -94,8 +94,7 @@
     background-image: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: -o-linear-gradient(top, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
     background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
