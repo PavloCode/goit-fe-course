@@ -1,0 +1,103 @@
+.features {
+    padding-top: 50px;
+}
+
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    width: 33.3333%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.features__list__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.title-universal {
+    text-align: center;
+    font-size: 30px;
+    font-family: $main-font-stack;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.subtitle-universal {
+    font-size: 24px;
+    color: $color-dark-gray;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-transform: none;
+}
+
+.features__title {
+    font-size: 14px;
+    color: $color-dark-gray;
+    font-family: $main-font-stack;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.features__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-light-gray;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 100px;
+    position: relative;
+}
+
+.title-element::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $color-red;
+    position: absolute;
+    bottom: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features__item::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    left: 30px;
+    background-position: center;
+    background: url('../img/sprites.png') no-repeat;
+}
+
+.icon-clock::before {
+    background-position: -209px -10px;
+}
+
+.icon-chart::before {
+    background-position: -108px -10px;
+}
+
+.icon-computer::before {
+    background-position: -258px -12px;
+}
+
+.icon-book::before {
+    background-position: -157px -10px;
+}
+
+.icon-house::before {
+    background-position: -9px -9px;
+}
+
+.icon-squre::before {
+    background-position: -57px -10px;
+}
