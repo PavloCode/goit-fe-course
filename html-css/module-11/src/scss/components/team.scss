@@ -6,7 +6,7 @@
     font-size: 15px;
     line-height: 24px;
     color: $color-light-gray;
-    font-family: 'Roboto', sans-serif;
+    font-family: $description-font;
     text-align: center;
 }
 
@@ -16,7 +16,6 @@
 
 .team__name {
     font-size: 14px;
-    color: rgb(51, 51, 51);
     color: $color-dark-gray;
     font-family: $main-font-stack;
     font-weight: 400;
@@ -27,7 +26,7 @@
     font-size: 15px;
     line-height: 24px;
     color: $color-light-gray;
-    font-family: 'Roboto', sans-serif;
+    font-family: $description-font;
     font-style: italic;
     font-weight: 300;
     padding-top: 5px;
@@ -53,7 +52,7 @@
         display: block;
     }
     &:hover.team__wrapper-image::after {
-        background: linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+        background: $gradient;
         content: "";
         height: 100%;
         width: 100%;

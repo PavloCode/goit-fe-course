@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15.jpg');
+    background-image: $gradient, url('../img/Layer15.jpg');
     height: 100vh;
     min-height: 650px;
 }
@@ -11,7 +11,7 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .banner {
-        background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%), url('../img/Layer15@2x.jpg');
+        background-image: $gradient, url('../img/Layer15@2x.jpg');
     }
 }
 
@@ -51,7 +51,7 @@
     font-size: 45px;
     color: $color-white;
     line-height: 2;
-    font-family: 'Kaushan Script', cursive;
+    font-family: $title-font;
     font-weight: 300;
     padding-bottom: 10px;
     text-transform: none;

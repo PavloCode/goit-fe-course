@@ -30,7 +30,7 @@
 .subtitle-universal {
     font-size: 24px;
     color: $color-dark-gray;
-    font-family: 'Kaushan Script', cursive;
+    font-family: $title-font;
     font-weight: 300;
     padding-bottom: 10px;
     text-transform: none;
@@ -51,7 +51,7 @@
     font-size: 15px;
     line-height: 24px;
     color: $color-light-gray;
-    font-family: 'Roboto', sans-serif;
+    font-family: $description-font;
     padding-left: 100px;
     position: relative;
 }

@@ -22,7 +22,6 @@
 
 .footer-contant__link {
     text-decoration: none;
-    // color: rgb(243, 129, 129);
     color: $color-red;
     font-size: 14px;
     font-family: $main-font-stack;
@@ -44,7 +43,7 @@
     background-color: $color-green;
     color: $color-white;
     &:hover {
-        background-color: rgb(138, 209, 196);
+        background-color: $color-green-dark;
     }
 }
 
@@ -52,7 +51,7 @@
     line-height: 24px;
     color: $color-dark-gray;
     font-style: italic;
-    font-family: 'Roboto', sans-serif;
+    font-family: $description-font;
     border: 1px solid $color-dark-white;
     border-right-color: $color-green;
     padding-left: 20px;
