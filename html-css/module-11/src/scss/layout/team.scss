@@ -1,0 +1,94 @@
+.team {
+    margin-bottom: 80px;
+    &__wrapper-background {
+        margin-bottom: 30px;
+    }
+    &__name {
+        font-size: 14px;
+        color: $color-dark-gray;
+        font-family: $main-font-stack;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__occupation {
+        font-size: 15px;
+        line-height: 24px;
+        color: $color-light-gray;
+        font-family: $description-font;
+        font-style: italic;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 95px;
+    }
+    &__item {
+        width: 380px;
+        position: relative;
+    }
+    &__wrapper-image {
+        position: relative;
+        &:hover {
+            transform: translate(-10px, -10px);
+        }
+        &:hover.background-shadow {
+            display: block;
+        }
+        &:hover.team__wrapper-image::after {
+            background: $gradient;
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            opacity: 0.9;
+        }
+        &:hover .team__overlay {
+            display: flex;
+        }
+    }
+    &__image {
+        display: block;
+        width: 100%;
+    }
+    &__shadow {
+        width: 100%;
+        height: 100%;
+        background-color: $color-green;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        top: 0px;
+    }
+    &__wrapper-background {
+        position: relative;
+    }
+    &__date {
+        text-align: center;
+    }
+    &__overlay {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        display: none;
+    }
+    &__button {
+        width: 55px;
+        height: 55px;
+        margin: 1px;
+        background-color: $color-yellow;
+        position: relative;
+        fill: $color-red;
+        &:hover {
+            fill: $color-white;
+            background-color: $color-red;
+        }
+    }
+}

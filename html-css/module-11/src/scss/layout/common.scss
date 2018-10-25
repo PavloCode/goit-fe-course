@@ -1,0 +1,107 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title-universal {
+    text-align: center;
+    font-size: 30px;
+    font-family: $main-font-stack;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: relative;
+    width: 320px;
+}
+
+.subtitle-universal {
+    font-size: 24px;
+    color: $color-dark-gray;
+    font-family: $title-font;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-transform: none;
+    width: 300px;
+    display: inline-block;
+}
+
+.title-element::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $color-red;
+    position: absolute;
+    bottom: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-clock::before {
+    background-position: -209px -10px;
+}
+
+.icon-chart::before {
+    background-position: -108px -10px;
+}
+
+.icon-computer::before {
+    background-position: -258px -12px;
+}
+
+.icon-book::before {
+    background-position: -157px -10px;
+}
+
+.icon-house::before {
+    background-position: -9px -9px;
+}
+
+.icon-squre::before {
+    background-position: -57px -10px;
+}
+
+.cart,
+.busket {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    fill: $color-white;
+    width: 18px;
+    height: 20px;
+    &:hover {
+        fill: $color-yellow;
+    }
+}
+
+.about-team {
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-light-gray;
+    font-family: $description-font;
+    text-align: center;
+}
+
+.animation {
+    transition-property: translate();
+    transition-duration: 200ms;
+}
+
+.facebook {
+    padding: 0 20px;
+}
+
+.twitter {
+    padding: 0 10px;
+}
+
+.pinterest {
+    padding: 0 13px;
+}
+
+.instagram {
+    padding: 0 10px;
+}

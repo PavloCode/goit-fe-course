@@ -1,0 +1,43 @@
+.features {
+    padding-top: 50px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 33.3333%;
+        position: relative;
+        margin-bottom: 90px;
+    }
+    &__list__item:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+    &__title {
+        font-size: 14px;
+        color: $color-dark-gray;
+        font-family: $main-font-stack;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        position: relative;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        color: $color-light-gray;
+        font-family: $description-font;
+        padding-left: 100px;
+        position: relative;
+    }
+    &__item::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 15px;
+        left: 30px;
+        background-position: center;
+        background: url('../img/sprites.png') no-repeat;
+    }
+}
