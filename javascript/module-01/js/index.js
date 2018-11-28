@@ -2,31 +2,19 @@
 const adminLogin = 'admin';
 const adminPassword = '1111';
 let userPassword, userLogin;
-// login
+
 userLogin = prompt('Введите логин');
-switch (userLogin) {
-    case adminLogin:
-        alert('Добро пожаловать !');
-        break;
-    case null:
-        alert('Отменено пользователем');
-        break;
-    default:
-        alert('Неверный логин');
-        break;
-}
-// password
 if (userLogin === adminLogin) {
     userPassword = prompt('Введите пароль');
-    switch (userPassword) {
-        case adminPassword:
-            alert('Добро пожаловать !');
-            break;
-        case null:
-            alert('Отменено пользователем');
-            break;
-        default:
-            alert('Неверный пароль');
-            break;
+    if (userPassword === adminPassword) {
+        alert('Добро пожаловать !')
+    } else if (userPassword === null) {
+        alert('отменено пользователем');
+    } else if (userPassword !== adminPassword) {
+        alert('Неверный пароль !')
     }
+} else if (userLogin === null) {
+    alert('отменено пользователем');
+} else if (userLogin !== adminLogin) {
+    alert('Неверный логин')
 }
