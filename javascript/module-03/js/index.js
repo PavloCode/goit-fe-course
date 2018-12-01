@@ -8,41 +8,32 @@ const max = 16;
 
 const isLoginValid = function(login) {
     let valid;
-
-    let arr = login.split('');
-    if (arr.length >= min && arr.length <= max) {
-        valid = true;
+    if (login.length >= min && login.length <= max) {
+        return valid = true;
     } else {
-        valid = false;
+        return valid = false;
     }
-    return valid;
 };
 
 //проверяет наличие login в массиве allLogins на уникальность
 
 const isLoginUnique = function(allLogins, login) {
     let valid;
-
-    for (let value of allLogins) {
-        if (value === login) {
-            console.log('такой есть');
-            valid = false;
-            return;
-        } else {
-            console.log('такого нет');
-            valid = true;
-        }
+    if (allLogins.includes(login)) {
+        console.log('такой логин есть');
+        return valid = false;
+    } else {
+        console.log('такого логина нет');
+        return valid = true;
     }
-    return valid;
 };
 
 //скрипт добавления логина в массив logins
 
 const addLogin = function(allLogins, login) {
-
     let validLength = isLoginValid(login);
     let validUnique;
-    console.log(validLength);
+    console.log('валидность длинны символов', validLength);
     const array = allLogins;
     // вызов метода на проверку длинны символов
     if (validLength) {
@@ -63,4 +54,8 @@ const addLogin = function(allLogins, login) {
 };
 
 const userlogin = prompt('Введите login от 4 до 16 символов');
-addLogin(logins, userlogin);
+if (userlogin !== null) {
+    addLogin(logins, userlogin);
+} else {
+    alert('отменено пользователем');
+}
