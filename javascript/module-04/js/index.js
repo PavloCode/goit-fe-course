@@ -46,6 +46,9 @@ function Cashier(name, productDatabase) {
     this.onError = function() {
         console.log('Очень жаль, вам не хватает денег на покупки');
     };
+    this.reset = function() {
+        this.customerMoney = 0;
+    };
 }
 
 /* Пример использования */
@@ -77,3 +80,8 @@ if (change !== null) {
     // При неудачном обслуживании вызываем метод onError   
     mango.onError(); // Очень жаль, вам не хватает денег на покупки
 }
+
+mango.reset();
+
+// Проверяем значения после reset
+console.log(mango.customerMoney); // 0
