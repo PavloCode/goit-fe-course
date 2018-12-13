@@ -33,17 +33,6 @@ class Hamburger {
             console.log('Такой добавки не было');
         }
     };
-    getToppings() {
-        return this._toppings;
-    };
-
-    getSize() {
-        return this._size;
-    };
-
-    getStuffing() {
-        return this._stuffing;
-    };
 
     calculatePrice() {
         let normalPrice = Hamburger.SIZES[[this._size]].price + Hamburger.STUFFINGS[[this._stuffing]].price;
@@ -130,10 +119,10 @@ hamburger.addTopping(Hamburger.TOPPING_SAUCE);
 console.log("Price with sauce: ", hamburger.calculatePrice());
 
 // Проверить, большой ли гамбургер?
-console.log("Is hamburger large: ", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
+console.log("Is hamburger large: ", hamburger.size === Hamburger.SIZE_LARGE); // -> false
 
 // Убрать добавку
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 
 // Смотрим сколько добавок
-console.log("Hamburger has %d toppings", hamburger.getToppings().length); // 1
+console.log("Hamburger has %d toppings", hamburger.toppings.length); // 1
