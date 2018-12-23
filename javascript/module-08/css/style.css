@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(38, 49, 49, 0.719);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.preview {
+    display: flex;
+}
+
+.fullview {
+    width: 600px;
+    margin: 0 auto;
+}
