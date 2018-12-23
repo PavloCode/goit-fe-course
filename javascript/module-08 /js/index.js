@@ -1,9 +1,9 @@
 'use strict'
 const galleryItems = [
-    { preview: '../css/image/1-320.jpeg', fullview: '../css/image/1-1280.jpeg', alt: "alt text 1" },
-    { preview: '../css/image/2-320.jpeg', fullview: '../css/image/2-1280.jpeg', alt: "alt text 2" },
-    { preview: '../css/image/3-320.jpeg', fullview: '../css/image/3-1280.jpeg', alt: "alt text 3" },
-    { preview: '../css/image/4-320.jpeg', fullview: '../css/image/4-1280.jpeg', alt: "alt text 4" },
+    { preview: './css/image/1-320.jpeg', fullview: './css/image/1-1280.jpeg', alt: "alt text 1" },
+    { preview: './css/image/2-320.jpeg', fullview: './css/image/2-1280.jpeg', alt: "alt text 2" },
+    { preview: './css/image/3-320.jpeg', fullview: './css/image/3-1280.jpeg', alt: "alt text 3" },
+    { preview: './css/image/4-320.jpeg', fullview: './css/image/4-1280.jpeg', alt: "alt text 4" },
 ];
 
 
