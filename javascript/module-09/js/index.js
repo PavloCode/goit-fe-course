@@ -44,6 +44,9 @@ function callbackReset() {
     tableView.innerHTML = '00:00.0';
     deltaTime = 0;
     reset.disabled = true;
+    miliseconds = 0;
+    minutes = 0;
+    seconds = 0;
 }
 
 function startTimer() {
