@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-info">
+            <p class="title">Table View</p>
+            <ul class="js-info"></ul>
+        </div>
+        <div class="wrapper-application">
+            <!-- all users -->
+            <button class="js-btAllUsers btn">Get All Users</button>
+            <!-- get by id -->
+            <form class="search-form">
+                <input class="js-inputId" type="text" placeholder="id">
+                <button class="js-btId" type="submit">By Id</button>
+            </form>
+            <!-- create user -->
+            <form class="create-form">
+                <input class="js-inputAddName" type="text" placeholder="name">
+                <button class="js-btAdd" type="submit">Create</button>
+                <input class="js-inputAddAge" type="text" placeholder="age">
+            </form>
+            <!-- delete user -->
+            <form class="delete-form">
+                <input class="js-inputRemoveId" type="text" placeholder="id">
+                <button class="js-btRemove" type="submit">Delete</button>
+            </form>
+            <!-- update user -->
+            <form class="update-form end-el">
+                <input class="js-inputUpdateId" type="text" placeholder="id">
+                <button class="js-btUpdate" type="submit">Update</button>
+                <input class="js-inputUpdateName" type="text" placeholder="name">
+                <input class="js-inputUpdateAge" type="text" placeholder="age">
+            </form>
+            <button class="bt-clear js-clear" type="submit">Clear</button>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
