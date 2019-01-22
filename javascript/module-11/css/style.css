@@ -1,0 +1,29 @@
+img {
+    display: block;
+    min-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    width: 150px;
+    height: auto;
+    position: absolute;
+}
+
+.wparrer {
+    display: flex;
+}
+
+.products-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 5px 15px;
+    cursor: pointer;
+}
