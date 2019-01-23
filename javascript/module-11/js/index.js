@@ -145,17 +145,17 @@ clearBt.addEventListener('click', function(e) {
 // comparison user array with laptops dates
 // get items
 function check(fil) {
-    let rednerArray = laptops.map(item => item);
+    let res = laptops;
     for (const key in fil) {
         if (fil[key].length > 0) {
-            rednerArray = rednerArray.filter(item => {
+            res = res.filter(item => {
                 if (fil[key].includes(item[key])) {
                     return item;
                 }
             });
         }
     }
-    return rednerArray;
+    return res;
 }
 // render cart
 function renderHtml(obj) {
