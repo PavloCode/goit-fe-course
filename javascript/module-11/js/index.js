@@ -147,11 +147,13 @@ clearBt.addEventListener('click', function(e) {
 function check() {
     rednerArray = laptops.map(item => item);
     for (const key in filter) {
-        rednerArray = rednerArray.filter(item => {
-            if (filter[key].includes(item[key])) {
-                return item;
-            }
-        });
+        if (filter[key].length > 0) {
+            rednerArray = rednerArray.filter(item => {
+                if (filter[key].includes(item[key])) {
+                    return item;
+                }
+            });
+        }
     }
     return rednerArray;
 }
