@@ -105,7 +105,7 @@ const laptops = [{
         descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, beatae.',
     },
 ];
-let filter = { size: [], color: [], release_date: [] };
+
 const form = document.querySelector('.js-form');
 const clearBt = document.querySelector('.reset');
 form.addEventListener('submit', handleFormSubmit);
@@ -114,7 +114,7 @@ form.addEventListener('submit', handleFormSubmit);
 function handleFormSubmit(evt) {
     evt.preventDefault();
     //clear user filter
-    filter = { size: [], color: [], release_date: [] };
+    const filter = { size: [], color: [], release_date: [] };
     //clear cart
     clearHtml();
     const inputs = Array.from(form.querySelectorAll('input'));
@@ -131,7 +131,7 @@ function handleFormSubmit(evt) {
         return acc;
     }, {});
     //comparison and get dates
-    const res = check();
+    const res = check(filter);
     // render
     renderHtml(res);
 }
@@ -144,12 +144,12 @@ clearBt.addEventListener('click', function(e) {
 
 // comparison user array with laptops dates
 // get items
-function check() {
-    rednerArray = laptops.map(item => item);
-    for (const key in filter) {
-        if (filter[key].length > 0) {
+function check(fil) {
+    let rednerArray = laptops.map(item => item);
+    for (const key in fil) {
+        if (fil[key].length > 0) {
             rednerArray = rednerArray.filter(item => {
-                if (filter[key].includes(item[key])) {
+                if (fil[key].includes(item[key])) {
                     return item;
                 }
             });
@@ -164,7 +164,7 @@ function renderHtml(obj) {
     const template = Handlebars.compile(source);
     const markcup = template(obj);
     list.insertAdjacentHTML('afterbegin', markcup);
-    clearCheckBox();
+    // clearCheckBox();
 }
 //clear cards of goods
 function clearHtml() {
