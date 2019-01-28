@@ -77,6 +77,7 @@ function renderPage() {
 deleteBt.addEventListener('click', function(event) {
     event.preventDefault();
     const target = event.target;
+    console.log(target);
     arrayItems = arrayItems.filter(function(item) {
         const targetValue = document.querySelector('.js-text').innerHTML;
         return item.url !== targetValue;
