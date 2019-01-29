@@ -81,8 +81,7 @@ deleteBt.addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName !== "BUTTON") return;
     arrayItems = arrayItems.filter(function(item) {
-        const targetValue = document.querySelector('.js-text').innerHTML;
-        return item.url !== targetValue;
+        return item.url !== target.previousElementSibling.innerHTML;
     });
     localStorage.setItem('items', JSON.stringify(arrayItems));
     renderPage();
