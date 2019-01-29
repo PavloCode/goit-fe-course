@@ -64,14 +64,16 @@ function getUrl() {
 }
 
 function renderPage() {
-    arrayItems = JSON.parse(localStorage.getItem('items'));
-    const list = document.querySelector('.cards-container');
-    const source = document.querySelector('#card-template').innerHTML.trim();
-    const template = Handlebars.compile(source);
-    const markcup = arrayItems.reduce(function(acc, item) {
-        return acc + template(item);
-    }, "");
-    list.innerHTML = markcup;
+    if (localStorage.getItem('items')) {
+        arrayItems = JSON.parse(localStorage.getItem('items'));
+        const list = document.querySelector('.cards-container');
+        const source = document.querySelector('#card-template').innerHTML.trim();
+        const template = Handlebars.compile(source);
+        const markcup = arrayItems.reduce(function(acc, item) {
+            return acc + template(item);
+        }, "");
+        list.innerHTML = markcup;
+    }
 }
 
 deleteBt.addEventListener('click', function(event) {
