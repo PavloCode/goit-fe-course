@@ -64,22 +64,20 @@ function getUrl() {
 }
 
 function renderPage() {
-    if (localStorage.getItem('items')) {
-        arrayItems = JSON.parse(localStorage.getItem('items'));
-        const list = document.querySelector('.cards-container');
-        const source = document.querySelector('#card-template').innerHTML.trim();
-        const template = Handlebars.compile(source);
-        const markcup = arrayItems.reduce(function(acc, item) {
-            return acc + template(item);
-        }, "");
-        list.innerHTML = markcup;
-    }
+    arrayItems = JSON.parse(localStorage.getItem('items'));
+    const list = document.querySelector('.cards-container');
+    const source = document.querySelector('#card-template').innerHTML.trim();
+    const template = Handlebars.compile(source);
+    const markcup = arrayItems.reduce(function(acc, item) {
+        return acc + template(item);
+    }, "");
+    list.innerHTML = markcup;
 }
 
 deleteBt.addEventListener('click', function(event) {
     event.preventDefault();
     const target = event.target;
-    console.log(target);
+    if (target.tagName !== "BUTTON") return;
     arrayItems = arrayItems.filter(function(item) {
         const targetValue = document.querySelector('.js-text').innerHTML;
         return item.url !== targetValue;
