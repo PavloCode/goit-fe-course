@@ -48,19 +48,26 @@ function handleFormSubmit(event) {
 
 function getUrl() {
     const inputUrl = document.querySelector('.js-input').value;
-    const hasDublicate = arrayItems.some(function(item) {
-        return item.url === inputUrl;
-    });
-    if (hasDublicate !== true) {
-        if (inputUrl !== '') {
-            arrayItems.unshift({
-                url: inputUrl
-            });
-            localStorage.setItem('items', JSON.stringify(arrayItems));
+    const result = validateUrl(inputUrl);
+    if (result) {
+        console.log('валидность ', result);
+        const hasDublicate = arrayItems.some(function(item) {
+            return item.url === inputUrl;
+        });
+        if (hasDublicate !== true) {
+            if (inputUrl !== '') {
+                arrayItems.unshift({
+                    url: inputUrl
+                });
+                localStorage.setItem('items', JSON.stringify(arrayItems));
+            }
+        } else {
+            alert('This value has been registered and can not be written againe!');
         }
     } else {
-        alert('This value has been registered and can not be written againe!');
+        alert('Invalid url error');
     }
+
 }
 
 function renderPage() {
@@ -86,3 +93,7 @@ deleteBt.addEventListener('click', function(event) {
     localStorage.setItem('items', JSON.stringify(arrayItems));
     renderPage();
 });
+
+function validateUrl(url) {
+    return /^[a-z]+:\/\//i.test(url);
+}
