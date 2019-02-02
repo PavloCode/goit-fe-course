@@ -8,10 +8,3 @@ const view = new View();
 const model = new Model();
 
 new Controller(model, view);
-// res.removeNote();
-
-
-
-// let res = model.test('Mango');
-// let resView = view.test(res);
-// console.log(resView);
